@@ -1,2 +1,2 @@
 # assorted-dockerfiles
-A collection of my experiments with docker 
+A collection of my experiments with docker.
