@@ -2,6 +2,8 @@
 A simple docker image running on [alpine](http://www.alpinelinux.org/) with ruby and the xml parsing gem [nokogiri](http://www.nokogiri.org/).
 
 #### Building image
+Image size: 28MB
+
 This image was built from the dockerfile with:
 ```
 docker build -t alpine-ruby-nokogiri .
