@@ -2,7 +2,7 @@ FROM alpine:3.2
 MAINTAINER Rob Eastwood <rob.eastwood8@gmail.com>
 
 # build with db -t alpine-ruby-ox .
-# run with $ docker run --rm -it --name="alp-ruby-ox"  /bin/sh
+# run with $ docker run --rm -it --name="alp-ruby-ox" alpine-ruby-ox /bin/sh
 
 # Update and install all of the required packages.
 # At the end, remove the apk cache
@@ -23,3 +23,7 @@ RUN apk del \
     build-base \
     ruby-doc \
     ruby-rdoc 
+
+COPY FHIR_patient-example.xml ox-test.rb /apps/
+
+WORKDIR /apps
