@@ -1,7 +1,6 @@
-# assorted-dockerfiles
-A collection of my experiments with docker.
-
-And mostly plagiarised, at that.
+# alpine-ruby-ox
+A simple docker image running on alpine with ruby and the xml parsing gem [ox](https://github.com/ohler55/ox).
+A simple (albeit less featured) alternative to nokogiri.
 
 #### Building image
 This image was built from the dockerfile with:
@@ -13,3 +12,10 @@ Open a container interactively so that the test file can be run:
 Then at the prompt issue
 `./ox-test.tb`
 
+#### Various Guides
+https://github.com/ohler55/ox/blob/master/lib/ox/element.rb
+http://stackoverflow.com/questions/21786005/how-to-open-parse-and-process-xml-file-with-ox-gem-like-with-nokogiri-gem
+http://www.ohler.com/ox/Ox/Element.html#locate-instance_method
+
+#### Sample xml file
+The file `FHIR_patient-example.xml` was sourced from the FHIR standards website [here](https://www.hl7.org/fhir/patient-example-f001-pieter.xml.html)
