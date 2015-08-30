@@ -20,9 +20,9 @@ Then at the prompt issue:
 ./ox-test.tb
 ```
 
-or run the script the close the container with
-``
-docker run --rm -it --name="alp-ruby-ox" alpine-ruby-ox ruby /apps/ox-test.rb`
+or run the script directly then close the container with:
+```
+docker run --rm -it --name="alp-ruby-ox" alpine-ruby-ox ruby /apps/ox-test.rb
 
 ```
 
