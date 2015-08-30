@@ -20,10 +20,16 @@ Then at the prompt issue:
 ./ox-test.tb
 ```
 
+or run the script the close the container with
+``
+docker run --rm -it --name="alp-ruby-ox" alpine-ruby-ox ruby /apps/ox-test.rb`
+
+```
+
 #### Various Guides
-https://github.com/ohler55/ox/blob/master/lib/ox/element.rb
-http://stackoverflow.com/questions/21786005/how-to-open-parse-and-process-xml-file-with-ox-gem-like-with-nokogiri-gem
-http://www.ohler.com/ox/Ox/Element.html#locate-instance_method
+- https://github.com/ohler55/ox/blob/master/lib/ox/element.rb
+- http://stackoverflow.com/questions/21786005/how-to-open-parse-and-process-xml-file-with-ox-gem-like-with-nokogiri-gem
+- http://www.ohler.com/ox/Ox/Element.html#locate-instance_method
 
 #### Sample xml file
 The file `FHIR_patient-example.xml` was sourced from the FHIR standards website [here](https://www.hl7.org/fhir/patient-example-f001-pieter.xml.html).
