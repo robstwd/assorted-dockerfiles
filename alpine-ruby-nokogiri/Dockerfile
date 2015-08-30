@@ -13,6 +13,6 @@ RUN apk update && \
        ruby-nokogiri && \
     rm -rf /var/cache/apk/*
 
-COPY nokogiri-test.rb /apps/
+COPY nokogiri-test.rb /apps/nokogiri-test.rb
 
 WORKDIR /apps
