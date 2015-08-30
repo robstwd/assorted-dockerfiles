@@ -1,5 +1,5 @@
 # alpine-ruby-ox
-A simple docker image running on alpine with ruby and the xml parsing gem [ox](https://github.com/ohler55/ox).
+A simple docker image running on [alpine](http://www.alpinelinux.org/) with ruby and the xml parsing gem [ox](https://github.com/ohler55/ox).
 
 A simple (albeit less featured) alternative to nokogiri.
 
