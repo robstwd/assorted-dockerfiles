@@ -4,7 +4,7 @@ MAINTAINER Rob Eastwood <rob.eastwood8@gmail.com>
 # build with $ docker build -t alpine-curl-testfile .
 # run with $ docker run --rm alpine-curl-testfile 
 
-# Update and install all of the required packages.
+# Update and install curl
 # At the end, remove the apk cache
 RUN apk update && \
     apk upgrade && \
