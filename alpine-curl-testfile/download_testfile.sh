@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# usage
+# purpose
 # downloads a test file from Internode (my ISP) via curl
 # outputs the average download speed in kilobytes per second
 # Internode has vaying sizes of test files, up to 1G or more, but the 10MB seems a reasonable choice
@@ -17,4 +17,5 @@ echo Downloading 10 MB testfile ....
 output=$(curl $testfile -o 10meg.test -s -w '%{speed_download}')
 
 # extract kilobytes using awk, rounding to 2 decimal places via printf
+# in the above example, the output becomes "86.25 kilobytes per sec"
 echo $output 1000 | awk '{printf "%0.2f kilobytes per sec", $1 / $2 }'
