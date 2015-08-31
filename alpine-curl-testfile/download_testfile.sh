@@ -12,7 +12,7 @@ echo Downloading 10 MB testfile ....
 # use curl to download the file
 # '-o 10meg.test' = outputs to a file on the local filesystem
 # '-s' = silently, so no output to STDOUT
-#  '-w' '%{speed_download}' = write out the result with just teh download speed
+#  '-w' '%{speed_download}' = write out the result with just the download speed
 # typical output then is "86254.000" as bytes
 output=$(curl $testfile -o 10meg.test -s -w '%{speed_download}')
 
