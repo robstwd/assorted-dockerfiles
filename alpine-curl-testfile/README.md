@@ -14,7 +14,7 @@ docker build -t alpine-curl-testfile .
 
 #### Running container
 The script `download_testfile.sh` (see below) runs automatically when the container is started.
-Following which, the container stops:
+Following which, the container stops. Issue:
 ```
 docker run --rm alpine-curl-testfile
 ```
