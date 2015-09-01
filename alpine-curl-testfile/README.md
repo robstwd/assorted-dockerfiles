@@ -24,7 +24,7 @@ Downloading 10 MB testfile ....
 86.25 kilobytes per sec
 ```
 ##### Download script
-```
+```sh
 #!/bin/sh
 
 # purpose
