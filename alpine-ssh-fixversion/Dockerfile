@@ -2,7 +2,7 @@ FROM alpine:3.2
 MAINTAINER Rob Eastwood <rob.eastwood8@gmail.com>
 
 # build with $ docker build -t alpine-ssh-fixversion .
-# run with   $ docker run --rm -v $HOME/.ssh/known_hosts:/home/user/.ssh/known_hosts -it alpine-ssh-fixversion /bin/sh
+# run with   $ docker run --rm -v $HOME/.ssh/known_hosts:/home/user/.ssh/known_hosts -v $HOME/.ssh/config:/home/user/.ssh/config -it alpine-ssh-fixversion /bin/sh
 
 # Update and install the particular version of ssh
 # Then remove the apk cache
