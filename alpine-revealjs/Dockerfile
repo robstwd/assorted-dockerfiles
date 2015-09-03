@@ -1,6 +1,8 @@
 FROM alpine:3.2 
 MAINTAINER Rob Eastwood <rob.eastwood8@gmail.com>
 
+# work in progress 
+
 # build with $ docker build -t alpine-revealjs .
 
 # Update and install the required apps
