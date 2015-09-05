@@ -11,13 +11,26 @@ RUN apk update && \
     apk upgrade && \
     apk add \
         nodejs \
+        python \
+        build-base \
         git && \
     npm install -g grunt-cli && \
     rm -rf /var/cache/apk/*
 
+RUN git clone https://github.com/hakimel/reveal.js.git && \
+    cd reveal.js && \
+    npm install
 
-# run with   $ docker run --rm 
+WORKDIR reveal.js
 
-# sources:
-# https://hub.docker.com/r/danidemi/docker-reveal.js/~/dockerfile/
-# https://github.com/hakimel/reveal.js#installation
+CMD [ "grunt", "serve" ]
+
+EXPOSE 8000
+
+
+# run interactively with   $ docker run --rm -it alpine-revealjs /bin/sh
+# run the webserver with   $  docker run -d -p 8000:8000 alpine-revealjs
+
+
+
+
