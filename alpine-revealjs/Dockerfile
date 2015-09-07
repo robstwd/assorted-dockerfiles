@@ -15,21 +15,38 @@ RUN apk update && \
         build-base \
         git && \
     npm install -g grunt-cli && \
+    git clone --depth 1 https://github.com/hakimel/reveal.js.git && \
+    cd reveal.js && \
+    npm install && \
+    apk del \
+        build-base \
+        git && \
     rm -rf /var/cache/apk/*
 
-RUN git clone https://github.com/hakimel/reveal.js.git && \
-    cd reveal.js && \
-    npm install
+# set up local slide show
+#RUN mkdir /slides
 
-WORKDIR reveal.js
+#RUN rm /reveal.js/index.html 
+
+#COPY index.html /reveal.js/index.html
+
+
+#&& \
+#    ln -s /slides/index.html /reveal.js/index.html
+
+#WORKDIR reveal.js
 
 CMD [ "grunt", "serve" ]
 
 EXPOSE 8000
 
-
+# ======================================================================
 # run interactively with   $ docker run --rm -it alpine-revealjs /bin/sh
-# run the webserver with   $  docker run -d -p 8000:8000 alpine-revealjs
+# run the webserver with   $ docker run -d -p 8000:8000 alpine-revealjs
+# run the webserver with local slides 
+# $ docker run -d -v $(pwd):/slides/ -p 8000:8000 alpine-revealjs
+# $ docker run -d -v /home/rob/pc_stuff/docker/assorted-dockerfiles/alpine-revealjs:/slides/ -p 8000:8000 alpine-revealjs
+# $ docker run --rm -v "$(pwd)/index.html:/revealjs/index.html" -p 8000:8000 alpine-revealjs
 
 
 
