@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: fritzconnection
+Version: 0.4.6
+Summary: Communicate with the AVM FritzBox
+Home-page: https://bitbucket.org/kbr/fritzconnection
+Author: Klaus Bremer
+Author-email: bremer@bremer-media.de
+License: MIT
+Description: UNKNOWN
+Keywords: AVM FritzBox
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
