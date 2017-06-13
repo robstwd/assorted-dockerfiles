@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+fritzconnection/__init__.py
+fritzconnection/fritzconnection.py
+fritzconnection/fritzhosts.py
+fritzconnection/fritzmonitor.py
+fritzconnection/fritzstatus.py
+fritzconnection/fritztools.py
+fritzconnection/test.py
+fritzconnection.egg-info/PKG-INFO
+fritzconnection.egg-info/SOURCES.txt
+fritzconnection.egg-info/dependency_links.txt
+fritzconnection.egg-info/requires.txt
+fritzconnection.egg-info/top_level.txt
+fritzconnection/test_xml/igdconnSCPD.xml
+fritzconnection/test_xml/igddesc.xml
