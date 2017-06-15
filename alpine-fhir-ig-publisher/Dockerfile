@@ -41,4 +41,4 @@ RUN pip install --upgrade pip && \
 # gem which jekyll
 # /usr/lib/ruby/gems/2.3.0/gems/jekyll-3.4.3/lib/jekyll.rb
 
-RUN echo "highlighter: pygments" >> /usr/lib/ruby/gems/2.3.0/gems/jekyll-3.4.3/lib/site_template/_config.yml
+# RUN echo "highlighter: pygments" >> /usr/lib/ruby/gems/2.3.0/gems/jekyll-3.4.3/lib/site_template/_config.yml
